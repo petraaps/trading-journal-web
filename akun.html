@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Journal - Akun</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trading Journal</h1>
+
+        <nav>
+            <a href="index.html">Dashboard</a> |
+            <a href="akun.html">Akun</a> |
+            <a href="tambah-trade.html">Tambah Trade</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Informasi Akun Trading</h2>
+
+            <p>
+                Informasi mengenai akun trading yang digunakan
+                dalam jurnal.
+            </p>
+
+            <form>
+
+                <p>
+                    <label for="nama-akun">Nama Akun</label><br>
+                    <input
+                        type="text"
+                        id="nama-akun"
+                        name="nama-akun"
+                        value="The5ers Bootcamp"
+                        required>
+                </p>
+
+                <p>
+                    <label for="tipe-akun">Tipe Akun</label><br>
+                    <select
+                        id="tipe-akun"
+                        name="tipe-akun"
+                        required>
+
+                        <option value="">Pilih Tipe Akun</option>
+                        <option value="prop-firm" selected>Prop Firm</option>
+                        <option value="personal">Personal</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="initial-balance">Initial Balance</label><br>
+                    <input
+                        type="number"
+                        id="initial-balance"
+                        name="initial-balance"
+                        min="0"
+                        step="0.01"
+                        value="5000"
+                        required>
+                </p>
+
+                <p>
+                    <label for="maximum-loss">Maximum Loss</label><br>
+                    <input
+                        type="number"
+                        id="maximum-loss"
+                        name="maximum-loss"
+                        min="0"
+                        step="0.01"
+                        value="250"
+                        required>
+                </p>
+
+                <p>
+                    <label for="daily-loss-limit">Daily Loss Limit</label><br>
+                    <input
+                        type="number"
+                        id="daily-loss-limit"
+                        name="daily-loss-limit"
+                        min="0"
+                        step="0.01"
+                        placeholder="Kosongkan jika tidak ada">
+                </p>
+
+                <p>
+                    <label for="target-profit">Target Profit</label><br>
+                    <input
+                        type="number"
+                        id="target-profit"
+                        name="target-profit"
+                        min="0"
+                        step="0.01"
+                        value="300"
+                        required>
+                </p>
+
+                <button type="submit">Simpan Perubahan</button>
+
+            </form>
+
+        </article>
+
+        <article>
+            <h2>Status Akun</h2>
+
+            <p>Current Equity: $5200</p>
+            <p>Total Profit/Loss: +$200</p>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Trading Journal Pribadi Petra 2026</p>
+    </footer>
+
+</body>
+
+</html>

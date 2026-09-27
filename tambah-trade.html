@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Journal - Tambah Trade</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trading Journal</h1>
+
+        <nav>
+            <a href="index.html">Dashboard</a> |
+            <a href="akun.html">Akun</a> |
+            <a href="tambah-trade.html">Tambah Trade</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Tambah Trade</h2>
+
+            <p>Masukkan informasi trading yang telah dilakukan.</p>
+
+            <form enctype="multipart/form-data">
+
+                <p>
+                    <label for="tanggal">Tanggal Trading</label><br>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </p>
+
+                <p>
+                    <label for="pair">Pair</label><br>
+                    <input
+                        type="text"
+                        id="pair"
+                        name="pair"
+                        placeholder="Contoh: XAUUSD"
+                        required>
+                </p>
+
+                <p>
+                    <label for="posisi">Posisi</label><br>
+                    <select id="posisi" name="posisi" required>
+                        <option value="">Pilih Posisi</option>
+                        <option value="buy">Buy</option>
+                        <option value="sell">Sell</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="lot-size">Lot Size</label><br>
+                    <input
+                        type="number"
+                        id="lot-size"
+                        name="lot-size"
+                        step="0.01"
+                        min="0.01"
+                        placeholder="Contoh: 0.10"
+                        required>
+                </p>
+
+                <p>
+                    <label for="open-position">Open Position</label><br>
+                    <input
+                        type="number"
+                        id="open-position"
+                        name="open-position"
+                        step="0.01"
+                        min="1"
+                        placeholder="Contoh: 4605"
+                        required>
+                </p>
+
+                <p>
+                    <label for="stop-loss">Stop Loss</label><br>
+                    <input
+                        type="number"
+                        id="stop-loss"
+                        name="stop-loss"
+                        step="0.01"
+                        min="1"
+                        placeholder="Contoh: 4600"
+                        required>
+                </p>
+
+                <p>
+                    <label for="take-profit">Take Profit</label><br>
+                    <input
+                        type="number"
+                        id="take-profit"
+                        name="take-profit"
+                        step="0.01"
+                        min="1"
+                        placeholder="Contoh: 4620"
+                        required>
+                </p>
+
+                <p>
+                    <label for="risk-reward">Risk to Reward</label><br>
+                    <input
+                        type="text"
+                        id="risk-reward"
+                        name="risk-reward"
+                        placeholder="Contoh: 1:3"
+                        required>
+                </p>
+
+                <p>
+                    <label for="hasil">Hasil</label><br>
+                    <select id="hasil" name="hasil" required>
+                        <option value="">Pilih Hasil</option>
+                        <option value="win">Win</option>
+                        <option value="loss">Loss</option>
+                        <option value="break-even">Break Even</option>
+                        <option value="sl-plus">SL+</option>
+                        <option value="cut-manual">Cut Manual</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="profit-loss">Profit / Loss</label><br>
+                    <input
+                        type="number"
+                        id="profit-loss"
+                        name="profit-loss"
+                        step="any"
+                        placeholder="Contoh: 300 atau -100"
+                        required>
+                </p>
+
+                <p>
+                    <label for="closed-position">Closed Position</label><br>
+                    <input
+                        type="number"
+                        id="closed-position"
+                        name="closed-position"
+                        step="0.01"
+                        min="0.01"
+                        placeholder="Contoh: 4620"
+                        required>
+                </p>
+
+                <p>
+                    <label for="reason-entry">Reason Entry</label><br>
+                    <textarea
+                        id="reason-entry"
+                        name="reason-entry"
+                        rows="6"
+                        cols="50"
+                        placeholder="Tuliskan alasan melakukan entry..."
+                        required></textarea>
+                </p>
+
+                <p>
+                    <label for="gambar-analisa">Upload Gambar Analisa</label><br>
+                    <input
+                        type="file"
+                        id="gambar-analisa"
+                        name="gambar-analisa"
+                        accept="image/*">
+                </p>
+
+                <button type="submit">Simpan Trade</button>
+
+            </form>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Trading Journal Pribadi Petra 2026</p>
+    </footer>
+
+</body>
+
+</html>
