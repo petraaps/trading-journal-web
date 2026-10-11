@@ -36,3 +36,23 @@ trading-journal-web/
 ├── docs/
 │   └── screenshots/
 └── README.md
+```
+
+## Framework CSS
+
+PeTrade Journey menggunakan Bootstrap karena aplikasi memiliki tampilan
+dashboard, tabel data trading, form input, dan navigasi responsif.
+Bootstrap menyediakan sistem grid dan berbagai komponen yang mempermudah
+pembuatan struktur halaman serta membantu menjaga tampilan tetap responsif
+pada perangkat desktop dan mobile.
+
+## Implementasi Bootstrap
+
+Bootstrap digunakan pada PeTrade Journey untuk:
+
+1. Membuat layout dashboard menggunakan sistem grid.
+2. Membuat navbar yang responsif.
+3. Membuat tabel riwayat trading yang responsif.
+4. Mengatur tampilan form input data trading.
+5. Mengatur layout halaman akun dan detail trade.
+6. Menyesuaikan tampilan untuk perangkat desktop dan mobile.

@@ -4,124 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PeTrade Journey - Akun</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>PeTrade Journey</h1>
+        <div class="container py-4">
+            <h1 class="text-center mb-3">PeTrade Journey</h1>
 
-        <nav>
-            <a href="index.html">Dashboard</a> 
-            <a href="akun.html">Akun</a> 
-            <a href="tambah-trade.html">Tambah Trade</a>
-        </nav>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarMenu"
+                        aria-controls="navbarMenu"
+                        aria-expanded="false"
+                        aria-label="Buka navigasi">
+
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">Dashboard</a>
+                            <a class="nav-link active" href="akun.html">Akun</a>
+                            <a class="nav-link" href="tambah-trade.html">Tambah Trade</a>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
 
-        <article>
-            <h2>Informasi Akun Trading</h2>
+    <main class="container my-4">
 
-            <p>
-                Informasi mengenai akun trading yang digunakan
-                dalam jurnal.
-            </p>
+        <div class="row g-4">
 
-            <form>
+            <div class="col-12 col-lg-8">
 
-                <p>
-                    <label for="nama-akun">Nama Akun</label><br>
-                    <input
-                        type="text"
-                        id="nama-akun"
-                        name="nama-akun"
-                        value="The5ers Bootcamp"
-                        required>
-                </p>
+                <article>
 
-                <p>
-                    <label for="tipe-akun">Tipe Akun</label><br>
-                    <select
-                        id="tipe-akun"
-                        name="tipe-akun"
-                        required>
+                    <h2>Informasi Akun Trading</h2>
 
-                        <option value="">Pilih Tipe Akun</option>
-                        <option value="prop-firm" selected>Prop Firm</option>
-                        <option value="personal">Personal</option>
+                    <form>
 
-                    </select>
-                </p>
+                        <div class="mb-3">
+                            <label for="nama-akun" class="form-label">Nama Akun</label>
 
-                <p>
-                    <label for="initial-balance">Initial Balance</label><br>
-                    <input
-                        type="number"
-                        id="initial-balance"
-                        name="initial-balance"
-                        min="0"
-                        step="0.01"
-                        value="5000"
-                        required>
-                </p>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nama-akun"
+                                name="nama-akun"
+                                value="The5ers Bootcamp"
+                                required>
+                        </div>
 
-                <p>
-                    <label for="maximum-loss">Maximum Loss</label><br>
-                    <input
-                        type="number"
-                        id="maximum-loss"
-                        name="maximum-loss"
-                        min="0"
-                        step="0.01"
-                        value="250"
-                        required>
-                </p>
 
-                <p>
-                    <label for="daily-loss-limit">Daily Loss Limit</label><br>
-                    <input
-                        type="number"
-                        id="daily-loss-limit"
-                        name="daily-loss-limit"
-                        min="0"
-                        step="0.01"
-                        placeholder="Kosongkan jika tidak ada">
-                </p>
+                        <div class="mb-3">
+                            <label for="tipe-akun" class="form-label">Tipe Akun</label>
 
-                <p>
-                    <label for="target-profit">Target Profit</label><br>
-                    <input
-                        type="number"
-                        id="target-profit"
-                        name="target-profit"
-                        min="0"
-                        step="0.01"
-                        value="300"
-                        required>
-                </p>
+                            <select
+                                class="form-select"
+                                id="tipe-akun"
+                                name="tipe-akun">
 
-                <button type="submit">Simpan Perubahan</button>
+                                <option value="prop-firm" selected>Prop Firm</option>
+                                <option value="personal">Personal</option>
 
-            </form>
+                            </select>
+                        </div>
 
-        </article>
 
-        <article>
-            <h2>Status Akun</h2>
+                        <div class="mb-3">
+                            <label for="initial-balance" class="form-label">
+                                Initial Balance
+                            </label>
 
-            <p>Current Equity: $5200</p>
-            <p>Total Profit/Loss: +$200</p>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="initial-balance"
+                                name="initial-balance"
+                                value="5000"
+                                min="0"
+                                step="0.01"
+                                required>
+                        </div>
 
-        </article>
+
+                        <div class="mb-3">
+                            <label for="maximum-loss" class="form-label">
+                                Maximum Loss
+                            </label>
+
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="maximum-loss"
+                                name="maximum-loss"
+                                value="250"
+                                min="0"
+                                step="0.01"
+                                required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="daily-loss-limit" class="form-label">
+                                Daily Loss Limit
+                            </label>
+
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="daily-loss-limit"
+                                name="daily-loss-limit"
+                                min="0"
+                                step="0.01"
+                                placeholder="Kosongkan jika tidak ada">
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="target-profit" class="form-label">
+                                Target Profit
+                            </label>
+
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="target-profit"
+                                name="target-profit"
+                                value="300"
+                                min="0"
+                                step="0.01"
+                                required>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">
+                            Simpan Perubahan
+                        </button>
+
+                    </form>
+
+                </article>
+
+            </div>
+
+
+            <div class="col-12 col-lg-4">
+
+                <article>
+
+                    <h2>Status Akun</h2>
+
+                    <p>
+                        Current Equity:
+                        <span class="info-penting">$5200</span>
+                    </p>
+
+                    <p>
+                        Total Profit/Loss:
+                        <span class="info-penting">+$200</span>
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
 
     </main>
 
+
     <footer>
-        <p>Trading Journal Pribadi Petra 2026</p>
+        <div class="container">
+            <p>PeTrade Journey Pribadi Petra 2026</p>
+        </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
